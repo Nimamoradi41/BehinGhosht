@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_alignParentLeft="true"
+            android:visibility="gone"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ic_shoppingbasket"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/ic_notify"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="4dp"
+            android:src="@drawable/icon" />
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/fdf"
+        android:id="@+id/dvvdvvdvdv"
+        android:layout_centerHorizontal="true"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView_sabd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="@string/sabad"
+                android:textColor="#2F3F51"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/txt_line"
+                android:background="#DC1C53"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_below="@id/textView_sabd"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="سبد خری"/>
+            <FrameLayout
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/txt_line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/cdcdcdcdc"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imag_shop"
+                        android:src="@drawable/sop"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp" />
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:textStyle="bold"
+                        android:text="سبد خرید شما خالی است\n\nلطفا سبد خرید را پر کنید"
+                        android:textSize="18sp"
+                        android:textColor="#2F3F51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recy_sabadkharid"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <include
+        android:layout_alignParentBottom="true"
+        android:id="@+id/fdf"
+        layout="@layout/layout_footer"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    </include>
+
+</RelativeLayout>
