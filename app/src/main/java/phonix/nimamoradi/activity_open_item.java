@@ -45,6 +45,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class activity_open_item extends AppCompatActivity {
         RecyclerView recy_open_item;
@@ -95,7 +96,7 @@ public class activity_open_item extends AppCompatActivity {
           SharedPreferences sharedPreferences = getSharedPreferences("Login", Context.MODE_PRIVATE);
           name2 = sharedPreferences.getString("name", "");
           pass2 = sharedPreferences.getString("pass", "");
-        id=getIntent().getStringExtra("id");
+         id=getIntent().getStringExtra("id");
         count_request=0;
         methods=new ArrayList<>();
         img_link=new ArrayList<>();
@@ -356,7 +357,7 @@ public class activity_open_item extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                  SharedPreferences sharedPreferences=getSharedPreferences("Login",MODE_PRIVATE);
-              Boolean Login=   sharedPreferences.getBoolean("Login", false);
+                Boolean Login=   sharedPreferences.getBoolean("Login", false);
               String name=sharedPreferences.getString("name","");
                 String pass=sharedPreferences.getString("pass","");
                 if(name.equals("")||pass.equals(""))
@@ -436,7 +437,7 @@ public class activity_open_item extends AppCompatActivity {
     }
     public void setfont() {
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                .setDefaultFontPath("fonts/IRANSansMobile_Bold.ttf")
+                .setDefaultFontPath("fonts/IRANSans_Small_Bold.ttf")
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         );
@@ -697,6 +698,10 @@ public class activity_open_item extends AppCompatActivity {
 
 
 
+    }
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
 }

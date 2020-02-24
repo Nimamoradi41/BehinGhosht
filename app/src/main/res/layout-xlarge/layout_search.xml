@@ -47,174 +47,162 @@
             android:layout_marginBottom="4dp"
             android:src="@drawable/icon" />
     </RelativeLayout>
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <FrameLayout
+        android:layout_below="@+id/relativeLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-       android:layout_below="@+id/relativeLayout"
-        android:id="@+id/fefdfS"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:background="@drawable/shape_edt"
-        android:visibility="visible">
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:background="@android:color/transparent"
-            android:gravity="right|center"
-            android:hint="جستوجو"
-            android:imeOptions="actionSearch"
-            android:inputType="textPersonName"
-            android:padding="32dp"
-            android:singleLine="true"
-            android:textSize="20sp"
-            android:textColor="#2F3F51"
-            android:textColorHint="#2F3F51"
-            android:visibility="visible"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline24"
-            app:layout_constraintStart_toEndOf="@+id/imageView14"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.85" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline25"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.15" />
-
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:visibility="visible"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/guideline24"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_search_magnifier_interface_symbol"
-            tools:ignore="VectorDrawableCompat" />
-
-        <ImageView
-            android:id="@+id/imageView14"
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="16dp"
-            android:alpha="0"
-            android:visibility="visible"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline25"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.487"
-            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-    <ScrollView
-        android:layout_above="@+id/button"
-        android:layout_below="@+id/fefdfS"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentLeft="true"
-        android:id="@+id/xxxvv"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="8.1">
-        <LinearLayout
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <androidx.constraintlayout.widget.ConstraintLayout
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline26"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_percent="0.91" />
-
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline27"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_percent="0.2" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline28"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_percent="0.45" />
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fefdfS"
+                tools:ignore="MissingConstraints">
 
                 <ImageView
                     android:id="@+id/imageView15"
-                    android:layout_width="250dp"
-                    android:layout_height="250dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/guideline28"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/guideline27"
+                    app:layout_constraintVertical_bias="0.26"
                     app:srcCompat="@drawable/ic_search_magnifier_interface_symbol"
                     tools:ignore="VectorDrawableCompat" />
 
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/guideline29"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    app:layout_constraintGuide_percent="0.59945506" />
                 <TextView
                     android:id="@+id/textView30"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:autoSizeMaxTextSize="22sp"
+                    android:autoSizeMinTextSize="14sp"
+                    android:autoSizeTextType="uniform"
+                    android:text="جستوجوی محصولات"
+                    android:textColor="#2F3F51"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView15"
+                    app:layout_constraintStart_toStartOf="@+id/imageView15"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView15"
+                    app:layout_constraintVertical_bias="0.0" />
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fefdfS"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0."
+                android:layout_margin="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shape_edt"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="right|center"
+                    android:imeOptions="actionSearch"
+                    android:inputType="textPersonName"
+                    android:paddingRight="8dp"
+                    android:autoSizeTextType="uniform"
+                    android:paddingLeft="8dp"
+                    android:textColorHint="#C32F3F51"
+                    android:hint="@string/Search"
+                    android:singleLine="true"
+                    android:textColor="#2F3F51"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline24"
+                    app:layout_constraintStart_toEndOf="@+id/imageView14"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.85" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.15" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
-                    android:text="جستوجوی محصولات"
-                    android:textSize="32sp"
-                    android:autoSizeTextType="uniform"
-                    android:autoSizeMaxTextSize="24sp"
-                    android:autoSizeMinTextSize="14sp"
-                    android:textColor="#2F3F51"
-                    app:layout_constraintBottom_toTopOf="@+id/guideline29"
+                    android:layout_marginBottom="8dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline24"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_search_magnifier_interface_symbol"
+                    tools:ignore="VectorDrawableCompat" />
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:alpha="0"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline25"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/guideline28"
-                    app:layout_constraintVertical_bias="0.0" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.487"
+                    app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/golbee"
+                android:text="جستوجو"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </ScrollView>
-    <Button
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#E81E5C"
-        android:text="جستوجو"
-        android:textColor="#fff"
-        android:textSize="24sp"
-        android:textStyle="bold"
-         />
+    </FrameLayout>
 
 
 </RelativeLayout>

@@ -58,7 +58,7 @@ public class Activity_rigersterandsingin extends AppCompatActivity implements Vi
     }
     public void setfont() {
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                .setDefaultFontPath("fonts/IRANSans.ttf")
+                .setDefaultFontPath("fonts/IRANSans_Small_Bold.ttf")
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         );

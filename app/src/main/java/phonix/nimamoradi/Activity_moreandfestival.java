@@ -2,6 +2,7 @@ package phonix.nimamoradi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -10,6 +11,7 @@ import java.util.ArrayList;
 import phonix.nimamoradi.frags.frag_festival;
 import phonix.nimamoradi.frags.frag_more;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class Activity_moreandfestival extends AppCompatActivity {
 
@@ -46,12 +48,15 @@ public class Activity_moreandfestival extends AppCompatActivity {
     }
     public void setfont() {
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                .setDefaultFontPath("fonts/IRANSansMobile_Bold")
+                .setDefaultFontPath("fonts/IRANSans_Small_Bold.ttf")
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         );
     }
-
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
     @Override
     public void onBackPressed() {
         super.onBackPressed();

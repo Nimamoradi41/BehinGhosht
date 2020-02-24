@@ -103,7 +103,7 @@ public class frag_sabadkharid extends Fragment {
         imag_shop.setLayoutParams(new LinearLayout.LayoutParams(metrics.widthPixels/3,metrics.widthPixels/3));
         imag_shop.requestLayout();
         config_dialog(container,inflater);
-        setRecy_sabadkharid();
+//        setRecy_sabadkharid();
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -288,6 +288,7 @@ public class frag_sabadkharid extends Fragment {
                 if (s.equals("true"))
                 {
                      dialog_progress.dismiss();
+                    Toast.makeText(getContext(), "N", Toast.LENGTH_SHORT).show();
                  }
             }
         });

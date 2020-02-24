@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:background="#fff"
+    android:animateLayoutChanges="true"
+    android:layout_height="match_parent"
+    tools:context=".Activity_rigersterandsingin">
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/relativeLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="4dp"
+            android:src="@drawable/icon" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/relativeLayout"
+        android:id="@+id/lin741"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="18dp"
+            android:background="@drawable/sha"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shap_txt_golbee"
+                android:drawableRight="@drawable/ic_plus_add_golbee_small"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:text="خروج"
+                android:textColor="#2F3F51"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline86"
+                app:layout_constraintEnd_toEndOf="@+id/changepass"
+                app:layout_constraintTop_toTopOf="@+id/guideline85"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/changepass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shap_txt_golbee"
+                android:drawableRight="@drawable/ic_plus_add_golbee_small"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:text="تغییر رمز عبور"
+                android:textColor="#2F3F51"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline85"
+                app:layout_constraintEnd_toEndOf="@+id/off"
+                app:layout_constraintTop_toTopOf="@+id/guideline84"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shap_txt_golbee"
+                android:drawableRight="@drawable/ic_plus_add_golbee_small"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:text="کد های تخفیف"
+                android:textColor="#2F3F51"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline84"
+                app:layout_constraintEnd_toEndOf="@+id/points"
+                app:layout_constraintTop_toTopOf="@+id/guideline83"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shap_txt_golbee"
+                android:drawableRight="@drawable/ic_plus_add_golbee_small"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:text="امتیاز ها"
+                android:textColor="#2F3F51"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline83"
+                app:layout_constraintEnd_toEndOf="@+id/messages"
+                app:layout_constraintTop_toTopOf="@+id/guideline82"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/messages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shap_txt_golbee"
+                android:drawableRight="@drawable/ic_plus_add_golbee_small"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:text="پیام ها"
+                android:textColor="#2F3F51"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline82"
+                app:layout_constraintEnd_toEndOf="@+id/myaddress"
+                app:layout_constraintTop_toTopOf="@+id/guideline81"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/myaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shap_txt_golbee"
+                android:drawableRight="@drawable/ic_plus_add_golbee_small"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:text="آدرس های من"
+                android:textColor="#2F3F51"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline81"
+                app:layout_constraintEnd_toEndOf="@+id/favourit"
+                app:layout_constraintTop_toTopOf="@+id/guideline80" />
+
+            <TextView
+                android:id="@+id/favourit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shap_txt_golbee"
+                android:drawableRight="@drawable/ic_plus_add_golbee_small"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:text="علاقه مندی ها"
+                android:textColor="#2F3F51"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline80"
+                app:layout_constraintEnd_toEndOf="@+id/orders"
+                app:layout_constraintTop_toTopOf="@+id/guideline79"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/orders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shap_txt_golbee"
+                android:drawableRight="@drawable/ic_plus_add_golbee_small"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:text="سفارشات من"
+                android:textColor="#2F3F51"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline79"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline23"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/editdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/shap_txt_golbee"
+                android:drawableRight="@drawable/ic_plus_add_golbee_small"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:text="ویرایش اطلاعات"
+                android:textColor="#2F3F51"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline23"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline22"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.04" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.14" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline79"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.24" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.34" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline81"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.44" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline82"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.54" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline83"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.64" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline84"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.74" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline85"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.84" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline86"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.94" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline87"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.97" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
